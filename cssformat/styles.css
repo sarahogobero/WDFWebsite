@@ -143,7 +143,9 @@ button:hover {
   height: auto;
   border-radius: 10px;
 }
-
+.websites ul li {
+  text-decoration: none;
+}
 .product-info {
   max-width: 300px;
 }
