@@ -31,9 +31,17 @@ body {
   min-height: 100%;
 }
 
+header,
+footer {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
 header {
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
   text-align: center;
-  padding: 20px;
 }
 
 nav ul {
@@ -73,10 +81,11 @@ p {
 
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   position: fixed;
   bottom: 0;
   width: 100%;
+  margin-top: auto;
 }
 
 form {
@@ -100,6 +109,7 @@ textarea {
   margin-top: 5px;
   border: 1px;
   border-radius: 5px;
+  border-color: black;
 }
 
 button {
@@ -109,6 +119,7 @@ button {
   border: none;
   cursor: pointer;
   margin-top: 10px;
+  border-radius: 5px;
 }
 
 a {
@@ -119,17 +130,14 @@ a:hover {
   color: mistyrose;
 }
 
-header,
-footer {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 10px;
-  color: white;
-}
+
 
 button:hover {
   background-color: black;
 }
-
+.websites p {
+  font-size: 20px;
+}
 .product {
   display: flex;
   align-items: center;
@@ -139,17 +147,15 @@ button:hover {
 }
 
 .product img {
-  width: 200px; /* Adjust based on your design */
+  width: 200px;
   height: auto;
   border-radius: 10px;
 }
-.websites ul li {
-  text-decoration: none;
-}
+
 .product-info {
   max-width: 300px;
 }
 
 .reverse {
-  flex-direction: row-reverse; /* Swaps the order for alternating effect */
+  flex-direction: row-reverse; 
 }
